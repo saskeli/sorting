@@ -14,9 +14,7 @@ void shell_sort_step(IT begin, IT end, size_t start, uint8_t step) {
     for (IT i = inv; i > begin; i -= step) {
       IT prev = i - step;
       if (*i < *prev) {
-        auto tmp = *i;
-        *i = *prev;
-        *prev = tmp;
+        std::swap(*i, *prev);
       } else {
         break;
       }
@@ -38,9 +36,7 @@ void shell_sort(IT begin, IT end) {
         for (IT i = inv; i > begin; --i) {
           IT prev = i - 1;
           if (*i < *prev) {
-            auto tmp = *i;
-            *i = *prev;
-            *prev = tmp;
+            std::swap(*i, *prev);
           } else {
             break;
           }

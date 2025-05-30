@@ -6,17 +6,12 @@
 
 namespace srt::internal {
 std::array primes = {
-    uint8_t(251), uint8_t(241), uint8_t(239), uint8_t(233), uint8_t(229),
-    uint8_t(227), uint8_t(223), uint8_t(211), uint8_t(199), uint8_t(197),
-    uint8_t(193), uint8_t(191), uint8_t(181), uint8_t(179), uint8_t(173),
-    uint8_t(167), uint8_t(163), uint8_t(157), uint8_t(151), uint8_t(149),
-    uint8_t(139), uint8_t(137), uint8_t(131), uint8_t(127), uint8_t(113),
-    uint8_t(109), uint8_t(107), uint8_t(103), uint8_t(101), uint8_t(97),
-    uint8_t(89),  uint8_t(83),  uint8_t(79),  uint8_t(73),  uint8_t(71),
-    uint8_t(67),  uint8_t(61),  uint8_t(59),  uint8_t(53),  uint8_t(47),
-    uint8_t(43),  uint8_t(41),  uint8_t(37),  uint8_t(31),  uint8_t(29),
-    uint8_t(23),  uint8_t(19),  uint8_t(17),  uint8_t(13),  uint8_t(11),
-    uint8_t(7),   uint8_t(5),   uint8_t(3),   uint8_t(2),   uint8_t(1)};
+    uint32_t(583087), uint32_t(291547), uint32_t(145777), uint32_t(72893),
+    uint32_t(36947),  uint32_t(18481),  uint32_t(9241),   uint32_t(4621),
+    uint32_t(2311),   uint32_t(1259),   uint32_t(631),    uint32_t(317),
+    uint32_t(163),    uint32_t(83),     uint32_t(43),     uint32_t(23),
+    uint32_t(13),     uint32_t(7),      uint32_t(5),      uint32_t(3),
+    uint32_t(2),      uint32_t(1)};
 
 template <class V_T>
 void populate_random(V_T& vec, uint64_t seed = 0) {
